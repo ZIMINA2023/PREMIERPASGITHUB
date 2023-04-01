@@ -21,4 +21,4 @@ final as (
 select * from region_nation
 )
 
-select * from final order by 1,2,3,4
+select * from final
