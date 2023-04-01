@@ -1,3 +1,8 @@
+{{config (
+    materialized="table"
+)}}
+
+
 with customers as (
 select c_custkey, c_name,c_address, c_phone, c_nationkey 
 
