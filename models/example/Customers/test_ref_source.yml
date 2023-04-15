@@ -7,3 +7,25 @@ sources:
     tables:
       - name: DIM_CUST
       - name: O_ORDER
+models:
+  - name: dim_client
+    columns:
+       - name: c_custkey
+         tests:
+          - unique
+          - not_null
+  - name: dim_commande
+    columns:
+       - name: o_orderkey
+         tests:
+          - unique
+          - not_null           
+       - name: o_orderpriority
+         tests:
+          - accepted_values:
+              values: 
+                - 2-HIGH
+                - 3-MEDIUM
+                - 5-LOW
+                - 1-URGENT
+                - 4-NOT SPECIFIED
