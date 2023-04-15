@@ -1,7 +1,3 @@
-{{config (
-    materialized="table"
-)}}
-
 with customers as (
 select * from {{ref('dim_client')}}
 ),

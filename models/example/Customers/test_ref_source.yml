@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: ODS
+    database: REF_CLIENT
+    schema: ODS
+    tables:
+      - name: DIM_CUST
+      - name: O_ORDER
