@@ -6,6 +6,11 @@ sources:
     schema: ODS
     tables:
       - name: DIM_CUST
+        columns:
+          - name: c_custkey
+        tests:
+          - unique
+          - not_null
       - name: O_ORDER
 models:
   - name: dim_client
